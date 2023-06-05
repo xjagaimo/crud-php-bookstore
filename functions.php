@@ -1,12 +1,12 @@
 <?php
 function pdo_connect_pgsql() {
-    $DATABASE_HOST = 'localhost';
+    $DATABASE_HOST = '192.168.43.187';
     $DATABASE_PORT = '5432';
     $DATABASE_USER = 'nathan';
     $DATABASE_PASS = '190902';
     $DATABASE_NAME = 'bookstore';
     try {
-    	return new PDO('pgsql:host=' . $DATABASE_HOST . ';port=' . $DATABASE_PORT . ';dbname=' . $DATABASE_NAME . ';client_encoding=UTF8', $DATABASE_USER, $DATABASE_PASS);
+    	return new PDO('pgsql:host=' . $DATABASE_HOST . ';port=' . $DATABASE_PORT . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
     	// If there is an error with the connection, stop the script and display the error. options=-c client_encoding=utf8
     	//exit('Failed to connect to database!');
