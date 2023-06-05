@@ -1,5 +1,5 @@
 <?php
-function pdo_connect_mysql() {
+function pdo_connect_pgsql() {
     $DATABASE_HOST = 'localhost';
     $DATABASE_PORT = '5432';
     $DATABASE_USER = 'nathan';
@@ -27,7 +27,7 @@ echo <<<EOT
     	<div>
     		<h1>Website Title</h1>
             <a href="index.php"><i class="fas fa-home"></i>Home</a>
-    		<a href="read.php"><i class="fas fa-address-book"></i>Contacts</a>
+    		<a href="read.php"><i class="fas fa-address-book"></i>Books</a>
     	</div>
     </nav>
 EOT;
