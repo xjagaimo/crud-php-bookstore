@@ -5,8 +5,9 @@ function pdo_connect_pgsql() {
     $DATABASE_USER = 'nathan';
     $DATABASE_PASS = '190902';
     $DATABASE_NAME = 'bookstore';
+    $CHARSET = 'utf8';
     try {
-    	return new PDO('pgsql:host=' . $DATABASE_HOST . ';port=' . $DATABASE_PORT . ';dbname=' . $DATABASE_NAME, $DATABASE_USER, $DATABASE_PASS);
+    	return new PDO('pgsql:host=' . $DATABASE_HOST . ';port=' . $DATABASE_PORT . ';dbname=' . $DATABASE_NAME, $CHARSET, $DATABASE_USER, $DATABASE_PASS);
     } catch (PDOException $exception) {
     	// If there is an error with the connection, stop the script and display the error.
     	//exit('Failed to connect to database!');
