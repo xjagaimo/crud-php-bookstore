@@ -1,6 +1,6 @@
 <?php
 function pdo_connect_pgsql() {
-    $DATABASE_HOST = '192.168.43.187';
+    $DATABASE_HOST = 'localhost';
     $DATABASE_PORT = '5432';
     $DATABASE_USER = 'nathan';
     $DATABASE_PASS = '190902';
